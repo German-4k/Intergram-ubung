@@ -24,17 +24,21 @@ body {
 .suchefeld {
     height: 1rem;
     width: 4rem;
-    border-color: black;
 }
 
+/* Größe Anpassen */
 .suchenInput {
+    border-color: black;
+    height: 2rem;
+    width: 4rem;
 
 }
 
 .suchenIcon {
     background-image: url(./../icon/Search.svg);
-    height: 10rem;
-    width: 10rem;
+    object-fit: cover;
+    height: 2rem;
+    width: 2rem;
 
 }
 
