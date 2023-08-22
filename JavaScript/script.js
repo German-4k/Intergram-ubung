@@ -39,3 +39,8 @@ let posts = [
             `;
         }
     }
+
+    // omload Event aus dem body (HTML-Element)
+    function meineFuncktion() {
+
+    }
