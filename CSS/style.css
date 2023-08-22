@@ -15,16 +15,27 @@ body {
 
 .loge {
     /* image muss noch hinterlegt werden */
-    background-image: image();
-    border-radius: 100%;
+    background-color: aqua;
     height: 1rem;
     width: 1rem;
+    border-radius: 100%;
 }
 
 .suchefeld {
     height: 1rem;
     width: 4rem;
     border-color: black;
+}
+
+.suchenInput {
+
+}
+
+.suchenIcon {
+    background-image: url(./../icon/Search.svg);
+    height: 10rem;
+    width: 10rem;
+
 }
 
 .rechteSeite {
