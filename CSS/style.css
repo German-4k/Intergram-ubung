@@ -1,27 +1,41 @@
 
 body {
-    margin: 0;
+    left: 0;
     top: 0;
     background-color: gray;
 }
 
 
 .header {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    top: 0;
     width: 100vw;
     height: 5.5rem;
     background-color: white;
-    padding: 1rem;
+    padding: 1.5rem;
+    z-index: 1000;
 }
 
 .loge {
-    /* image muss noch hinterlegt werden */
-    background-color: aqua;
-    height: 1rem;
-    width: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    background-color: darkorange;
+    border-color: black;
+    height: 3rem;
+    width: 3rem;
     border-radius: 100%;
 }
 
 .suchefeld {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
     height: 1rem;
     width: 4rem;
 }
@@ -48,9 +62,11 @@ body {
 }
 
 .home, .anderItems, .userImage {
-    
-        /* image muss noch hinterlegt werden */
-
+    margin: 1rem;
     height: 1rem;
     width: 1rem;
+}
+
+.content {
+    margin-top: 3rem;
 }
