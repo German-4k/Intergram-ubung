@@ -22,8 +22,8 @@ body {
 
 .logo {
     display: flex;
-    justify-content: flex-start;
-    margin-left: -4rem;
+    justify-content: center;
+    align-items: center;
     background-color: darkorange;
     border-color: black;
     height: 5rem;
@@ -52,10 +52,10 @@ body {
     padding-left: 1.3rem; /* Hier setzen wir den linken Padding */
 }
 
-.suchenInput::placeholder {
-    /* wird nur noch gebracht wenn mann die Farbe oder was anders ändern möchte */
-    /* aber nicht mehr um den placeholder einzurücken, da wir das schon oben gemacht haben */
-}
+/* .suchenInput::placeholder */ 
+/* wird nur noch gebracht wenn mann die Farbe oder was anders ändern möchte */
+/* aber nicht mehr um den placeholder einzurücken, da wir das schon oben gemacht haben */
+
 
 
 
