@@ -49,10 +49,12 @@ body {
     height: 3rem;
     width: 25rem;
     font-size: 1.3rem;
+    padding-left: 1.3rem; /* Hier setzen wir den linken Padding */
 }
 
 .suchenInput::placeholder {
-    text-indent: 1.3rem;
+    /* wird nur noch gebracht wenn mann die Farbe oder was anders ändern möchte */
+    /* aber nicht mehr um den placeholder einzurücken, da wir das schon oben gemacht haben */
 }
 
 
