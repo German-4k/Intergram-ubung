@@ -41,6 +41,17 @@ let posts = [
     }
 
     // omload Event aus dem body (HTML-Element)
-    function meineFuncktion() {
-
+    function post() {
+        document.getElementById('newPost').innerHTML += `
+            <div class="newPostHintergrund">
+                <div
+                    class="logo">Logo>
+                </div>
+                <h1>New Post</h1>
+                <div>
+                    <input placeholder="new Post">
+                    <button>Abschicken</button>
+                </div>
+            </div>
+            `;
     }

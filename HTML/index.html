@@ -6,7 +6,7 @@
     <title>Instergram Übung</title>
     <link rel="stylesheet" href="./../CSS/style.css">
 </head>
-<body>
+<body onload="post()">
     <!-- Inhalt des Body onlod="meineFunction()" -->
 
     <header>
@@ -28,10 +28,15 @@
 
     </header>
 
-    <div class="content" id="postcontainer">
-
-
+    <div 
+        class="newPost" id="newPost"> <!-- Hier wird der Inhalt eingefügt -->
     </div>
+
+    <div 
+        class="content" id="postcontainer">
+    </div>
+
+    <script src="./../JavaScript/script.js"></script>
 
 </body>
 </html>
