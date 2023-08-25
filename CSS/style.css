@@ -88,3 +88,32 @@ body {
 .content {
     margin-top: 3rem;
 }
+
+
+/*  Hir begint der dynamische CSS-Code
+    der via Js erzeugt wurde.
+    Es steht als Kommentar immer die Function 
+    drüber.
+*/
+
+
+
+/* function post() */
+.newPostHintergrund {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 13rem;
+    margin-left: 6rem;
+    height: 20rem;
+    width: 48rem;
+    background-color: white;
+}
+
+#PostLogo {
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+
+

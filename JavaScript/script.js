@@ -45,7 +45,7 @@ let posts = [
         document.getElementById('newPost').innerHTML += `
             <div class="newPostHintergrund">
                 <div
-                    class="logo">Logo>
+                    class="logo" id="PostLogo">Logo
                 </div>
                 <h1>New Post</h1>
                 <div>
