@@ -51,9 +51,11 @@ let posts = [
                     <h1>New Post</h1>
                 </div>
                 <div class="post">
-                    <input class="inputPost" placeholder="new Post">
+                    <textarea wrap="hard" class="inputPost" placeholder="new Post"></textarea>
                     <button>Abschicken</button>
                 </div>
             </div>
             `;
     }
+
+    
