@@ -102,6 +102,9 @@ body {
 .newPostHintergrund {
     display: flex;
     justify-content: flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+    margin: 2rem;
     margin-top: 13rem;
     margin-left: 6rem;
     height: 20rem;
@@ -109,10 +112,55 @@ body {
     background-color: white;
 }
 
+.heatline {
+    display: flex;
+    justify-content: space-around;
+}
+
 #PostLogo {
     margin-left: 1.5rem;
     margin-top: 1.5rem;
 }
+
+h1 {
+    margin-left: 3.5rem;
+    margin-top: 3rem;
+}
+
+
+.post {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3.5rem;
+    margin-left: 1.5rem;
+}
+
+.post input {
+    width: 25rem;
+    height: 7.7rem;
+}
+
+.post button {
+    font-size: 1.3rem;
+    font: bold;
+    margin-left: 7rem;
+    margin-top: 5rem;
+    height: 3rem;
+    width: 9rem;
+}
+
+.inputPost::placeholder {
+    font-size: 1.5rem;
+    color: grey;
+    font: bold;
+}
+
+
+
+
+
+
+
 
 
 

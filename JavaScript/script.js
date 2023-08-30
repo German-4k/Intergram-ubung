@@ -40,16 +40,18 @@ let posts = [
         }
     }
 
-    // omload Event aus dem body (HTML-Element)
+    // onload Event aus dem body (HTML-Element)
     function post() {
         document.getElementById('newPost').innerHTML += `
             <div class="newPostHintergrund">
-                <div
-                    class="logo" id="PostLogo">Logo
+                <div class="heatline">
+                    <div
+                        class="logo" id="PostLogo">Logo
+                    </div>
+                    <h1>New Post</h1>
                 </div>
-                <h1>New Post</h1>
-                <div>
-                    <input placeholder="new Post">
+                <div class="post">
+                    <input class="inputPost" placeholder="new Post">
                     <button>Abschicken</button>
                 </div>
             </div>
