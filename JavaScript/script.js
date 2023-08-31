@@ -51,11 +51,21 @@ let posts = [
                     <h1>New Post</h1>
                 </div>
                 <div class="post">
-                    <textarea wrap="hard" class="inputPost" placeholder="new Post"></textarea>
-                    <button>Abschicken</button>
+                    <textarea id="inputPost" wrap="hard" class="inputPost" placeholder="new Post"></textarea>
+                    <button onclick="abschicken()">Abschicken</button>
                 </div>
             </div>
             `;
     }
 
-    
+    // nach abschicken (button) ins JSON Speichern
+    function abschicken() {
+        // Wert aus dem Textfeld auslesen / abrufen
+        let post = document.getElementById('inputPost').value;
+
+        // Post aus textarea in ein neues JSON speichern
+
+
+        // textare-Feld wird nach Speichern im JSON wieder geleert
+        document.getElementById('inputPost').value = '';
+    }
