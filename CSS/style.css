@@ -216,13 +216,28 @@ h1 {
     background-color: antiquewhite;
 }
 
+.andersection {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
 .post-location {
     display: flex;
     justify-content: center;
     font-weight: bold;
     font-size: 1.2rem;
-    margin-left: -3rem;
-    margin-top: 1.5rem;
+    margin-left: 7rem;
+    margin-top: 0.9rem;
+}
+
+.löchenIcon {
+    background-image: url(./../icon/Trash.svg);
+    object-fit: cover;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: -5rem;
+    margin-top: 0.5rem;
 }
 
 

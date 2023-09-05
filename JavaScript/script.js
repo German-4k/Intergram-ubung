@@ -12,6 +12,7 @@ let posts = storedPosts || [
         'description': 'Text 1',
         'location': 'France',
         'comments': 'blbla 1',
+        'id': '1',
     },
     {
         'author': 'Pro-7',
@@ -19,6 +20,7 @@ let posts = storedPosts || [
         'description': 'Text 2',
         'location': 'USA',
         'comments': 'blbla 2',
+        'id': '2',
     },
     {
         'author': 'Sat.1',
@@ -26,6 +28,7 @@ let posts = storedPosts || [
         'description': 'Text 3',
         'location': 'Germany',
         'comments': 'blbla 3',
+        'id': '3',
     },
 ];
 
@@ -54,7 +57,7 @@ function post() {
             </div>
         </div>
         `; 
-};
+}
 
 function zeigeInhalt() {
     let content = document.getElementById('inputPost').value;
@@ -65,9 +68,9 @@ function abschicken(text) {
     let newPost = {
         author: "Steffen",
         image: "Steffen",
-        description: text,
+        description: "text 4",
         location: "Germany",
-        comments: "New comment"
+        comments: text,
     };
 
     // Füge den neuen Post zum Array hinzu
@@ -81,7 +84,7 @@ function abschicken(text) {
 
     // Aktalisiere die angezeigten Posts
     show();
-};
+}
 
 function templatePost(post, i) {
     return `
@@ -90,12 +93,31 @@ function templatePost(post, i) {
                 <div class="post-image">${post['image']}</div>
                 <div class="post-author">${post['author']}</div>
                 <div class="post-description">${post['description']}</div>
-                <div class="post-comments">${post['comments']}</div>
-                <div class="post-location">${post['location']}</div>
+                <textarea readonly class="post-comments">${post['comments']}</textarea>
+                <div class="andersection">
+                    <div class="post-location">${post['location']}</div>
+                    <div id="deletePost" onclick="deletePost()" class="löchenIcon"${post['id']}></div>
+                </div>
             </div>
         </div>
         `;
-};
+}
+
+function deletePost(postId) {
+    // Lade die aktuellen Posts aus dem localStorage
+    let posts = JSON.parse(localStorage.getItem('posts') || '[]');
+
+    // Filtere den Post, den du löschen möchtest, aus dem Array herus
+    post = posts.filter(post => post.id !== postId);
+
+    // Speichere das aktualisierte Array wieder im LocalStorage
+    localStorage.setItem('posts', JSON.stringify(post));
+}
+
+// entfernen aus dem localStorage via Key ID
+localStorage.removeItem('key');
+
+
 
 
 
